@@ -1,12 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
-#include"../Include/KeyBoardAsyncState.h"
+#include"../Include/keyBoard.h"
 #include<Windows.h>
 #include<stdio.h>
 
-#undef DEBUG
-
-void keyBoardAsyncKeyState(KeyBoard* key_board)
+__declspec(dllexport) void keyBoardAsyncKeyState(KeyBoard* key_board)
 {
 	int i = 0;
 	for (i = 0; i <= MAX_KEY_VALUE; i++)
